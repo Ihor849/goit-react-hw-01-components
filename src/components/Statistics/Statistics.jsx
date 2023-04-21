@@ -4,7 +4,7 @@ import { StatList } from 'components/Statistics/StatList/StatList'
 import {StatisticsList,StatItem} from './Statistics.styled'
 
 export const Statistics = ({ statistics, title, children}) => {
-    const { id} = statistics;
+    const { id } = statistics;
     
     return (
         <StatisticsList key={id}>
