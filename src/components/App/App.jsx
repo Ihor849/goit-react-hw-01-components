@@ -12,12 +12,12 @@ import { Container } from './App.styled'
 export const App = () => {
   
   return (
-    <Container>
+    <>
       <Profile users={event} />
       <Statistics statistics={statistics} title="Upload stats" />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
-    </Container>
+    </>
   );
  
 }

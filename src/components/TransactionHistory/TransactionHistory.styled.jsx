@@ -6,17 +6,17 @@ export const Table = styled.table`
   width: ${props => props.theme.spacing(100)};
 	
   margin: 0 auto;
-	margin-top: ${props => props.theme.spacing(5)};
-	border: 1px solid black;
+	/* padding-bottom: ${props => props.theme.spacing(5)}; */
+	padding-bottom: 15px;
+	border: 1px solid ${props => props.theme.colors.black};
 	background-color: ${props => props.theme.colors.white};
- 
   height: ${props => props.theme.spacing(5)};
 
 ` 
 
 export const Thead = styled.thead`
   width: 33.3%;
-	border: 2px solid black;
+	border: 2px solid ${props => props.theme.colors.black};
 	background-color:  ${props => props.theme.colors.green};
   
   Tr {
@@ -34,7 +34,7 @@ export const Th = styled.th`
   height: ${props => props.theme.spacing(5)};
 `
 export const Tr = styled.tr`
-	margin: 0;
+	
 	font-size: ${props => props.theme.spacing(5)};
 	border: 2px solid ${props => props.theme.colors.black};
 	color: ${props => props.theme.colors.nokiablue};
@@ -48,12 +48,14 @@ export const Tr = styled.tr`
 `
 export const Td = styled.td`
 	border: 2px solid ${props => props.theme.colors.black};
+	text-align: center;
    
   font-size: ${props => props.theme.fontSize(5)};
   &:first-of-type {
   text-align: left;
+   
   :first-of-type {
-		padding-left: ${props => props.theme.spacing(6)};
+		padding-left: ${props => props.theme.spacing(8)};
   
 	}
 }
