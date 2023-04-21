@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
-export const FriendItem = styled.li`
-    width: ${props => props.theme.spacing(100)};
+export const FriendListItem = styled.li`
+  width: ${props => props.theme.spacing(100)};
   padding: ${props => props.theme.fontSize(4)};
   display: flex;
   align-items: center;
@@ -23,17 +23,28 @@ export const Name = styled.p`
   font-weight: 700;
 `
 
+// export const Status = styled.span`
+//  width: ${props => props.theme.spacing(5)};
+//   height: ${props => props.theme.spacing(5)};
+//   border-radius: 50%;
+//   background-color: ${({ online, theme }) => {
+//   if (online) {
+//     return props => props.theme.colors.brightgreen
+//   } else {
+//     return props => props.theme.colors.red 
+//   }
+//   }
+// } 
+// `
+
 export const Status = styled.span`
  width: ${props => props.theme.spacing(5)};
   height: ${props => props.theme.spacing(5)};
   border-radius: 50%;
-  background-color: ${({ Online, theme }) => {
-  if (Online) {
-    return props => props.theme.colors.brightgreen
-  } else {
-    return props => props.theme.colors.red 
-  }
+  background-color: ${({ online, theme }) => {
+    return (online ? props =>  props.theme.colors.brightgreen  :  props => props.theme.colors.red) 
+    
+  
   }
 } 
 `
-
