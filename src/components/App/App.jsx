@@ -6,7 +6,6 @@ import { Profile } from 'components/Profile/Profile'
 import { Statistics } from 'components/Statistics/Statistics.jsx'
 import { FriendList } from 'components/FriendList/FriendList.jsx'
 import {TransactionHistory} from 'components/TransactionHistory/TransactionHistory.jsx'
-import { Container } from './App.styled'
 
 
 export const App = () => {

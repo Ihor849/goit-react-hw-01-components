@@ -5,7 +5,7 @@ export const Item = styled.li`
   flex-wrap: wrap;
   width: ${props => props.theme.spacing(20)};
   height: ${props => props.theme.spacing(15)};
-  border: 2px solid ${props => props.theme.colors. grey};
+  border: 2px solid #777272;
   background-color: ${props => props.theme.colors.aqua};
 `
 export const Lable = styled.span`
